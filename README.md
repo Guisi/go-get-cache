@@ -7,7 +7,7 @@ import "github.com/Guisi/go-get-cache"
 
 expiration := 30 * time.Second
 
-urlGetter := NewUrlGetter(expiration)
+urlGetter := go_get_cache.NewUrlGetter(expiration)
 
-resp, err, cached := urlGetter.Get('www.sampleurl.com')
+resp, err, cached := urlGetter.Get("www.sampleurl.com")
 ````
